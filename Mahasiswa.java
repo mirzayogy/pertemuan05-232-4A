@@ -11,11 +11,31 @@ public class Mahasiswa{
         System.out.println("IPK :" + ipk);
     }
 
-    void create(){
+    void read(){
         System.out.println("SELECT * FROM mahasiswa");
     }
 
     void delete(int id) {
         System.out.println("DELETE FROM mahasiswa WHERE id = " +id);
+    }
+
+    void create(String npm, String nama, int jumlahSks, double ipk){
+        String insertSql = "INSERT INTO mahasiswa VALUES (";
+        insertSql += "'" + nama +"',";
+        insertSql += "'" + npm + "',";
+        insertSql += jumlahSks + ",";
+        insertSql += ipk +")";
+
+        System.out.println(insertSql);
+    }
+
+    void create() {
+        String insertSql = "INSERT INTO mahasiswa VALUES (";
+        insertSql += "'" + this.nama + "',";
+        insertSql += "'" + this.npm + "',";
+        insertSql += this.jumlahSks + ",";
+        insertSql += this.ipk + ")";
+
+        System.out.println(insertSql);
     }
 }

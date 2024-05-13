@@ -13,6 +13,8 @@ public class Aksi {
 
         yogy.tampilkanInfo();;
         mirza.tampilkanInfo();
-       
+
+        yogy.create("002","Yogy",123,3.9);
+        mirza.create();       
     }
 }
