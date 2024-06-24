@@ -20,6 +20,7 @@ public class Buku {
     }
 
     public void setTahunTerbit(int tahunTerbit){
+        System.out.println("Dari superclass");
         this.tahunTerbit = tahunTerbit;
     }
 }

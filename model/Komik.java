@@ -10,4 +10,9 @@ public class Komik extends Buku {
     public void setVolume(int volume){
         this.volume = volume;
     }
+
+    public void setTahunTerbit(int tahunTerbit) {
+        System.out.println("Ini dari Overriding");
+    }
+
 }

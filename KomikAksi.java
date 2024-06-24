@@ -8,8 +8,12 @@ public class KomikAksi {
 
         Buku b = new Buku();
         b.setJudul("Koala Kumal");
+        b.setTahunTerbit(2023);
+
         //b.setVolume(2) tidak jalan karena dari subclass
 
         Mahasiswa m = new Mahasiswa();
+
+
     }
 }
