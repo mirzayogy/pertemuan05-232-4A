@@ -1,3 +1,4 @@
+
 public class Mahasiswa{
     String npm;
     String nama;
